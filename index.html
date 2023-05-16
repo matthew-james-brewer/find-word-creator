@@ -5,30 +5,17 @@
       <link rel='stylesheet' href='./style.css'>
    </head>
    <body>
-      <h1>Create a Find Words Game</h1>
-      <h3>INSTRUCTIONS:</h3>
-      <ul class='important'>
-         <li>Enter a list of correct answers for the game in the "all correct answers" field. One answer per line.</li>
-         <li>Enter a name for the game in the "word" field.</li>
-         <li>Click the "Open in New Tab" button to preview the game in a new tab.</li>
-         <li>Click the "Share" button to get a link to share the game with others.</li>
-         <li>Click the "Download" button to download the game as an HTML file.</li>
-      </ul>
-      <p>You can share the instructions with people:</p>
-      <p>Instructions for playing the generated game:</p>
-      <ul>
-         <li>Enter the correct answers in the text area below.</li>
-         <li>Type the letters from the word you want to make in the input boxes.</li>
-         <li>Click the 'check' button to see if your answers are correct.</li>
-      </ul>
-      <label for="correct">all correct answers:</label>
-      <textarea id="correct" rows="25"></textarea>
-      <br>
-      <label for="name">word:<input type="text" id="name"></label>
-      <!-- Buttons to open game in new tab, share data URI, and download game -->
-      <button onclick="openGame();">Open in New Tab</button>
-      <button onclick="shareGame();">Share</button>
-      <button onclick="downloadGame()">Download</button>
+      <main>
+      	 <h1>Create a Find Words Game</h1>
+         <h3>INSTRUCTIONS:</h3>
+         <ol class='important'>
+            <li>Enter the word for people to find words inside:<input type="text" id="name"></li>
+            <li>Enter all the words inside of above selected word(1 per line):<textarea id="correct" rows="25"></textarea></li>
+            <li>Click the <button onclick="openGame();">Open in New Tab</button> button to preview the game in a new tab.</li>
+            <li>Click the <button onclick="shareGame();">Share</button> button to get a link to share the game with others.</li>
+            <li>Click the <button onclick="downloadGame()">Download</button> button to download the game as an HTML file.</li>
+         </ol>
+      </main>
       <script src='./script.js'></script>
    </body>
 </html>
